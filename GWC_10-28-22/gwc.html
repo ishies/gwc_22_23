@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+    <head> 
+     <title>GWC 10/28/22</title>   
+    </head>
+    
+    <script>
+        // Hi! I make your website interactive!
+        function changeColor (on) {
+            if (on) {
+                document.getElementById("header").style.color = "green";
+                document.getElementById("header").innerHTML = "Hi, I'm a GREEN text box now!";
+            }
+            else {
+                document.getElementById("header").style.color = "blue";
+                document.getElementById("header").innerHTML = "Hi, I'm a blue text box!";
+                
+            }
+        }
+
+    </script>
+
+    <style>
+        /*I make your site look nice!*/
+        #header {
+            color: blue;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 100px;
+        }
+    </style>
+    
+    <body>
+        <!--I make your site visible with text and image!-->
+        <h1 id = "header" onmouseover="changeColor(true)" onmouseleave="changeColor(false)">Hi, I'm a blue text box!</h1>
+
+    </body>
